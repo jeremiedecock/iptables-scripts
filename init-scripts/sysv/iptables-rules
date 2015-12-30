@@ -41,11 +41,12 @@
 PATH=/sbin:/bin
 DESC="Iptables scripts to setup Netfilter (the Linux firewall)"
 NAME=iptables
-SCRIPT_NAME=/etc/init.d/iptables
+IPTABLES_CONFIG_FILE=/etc/default/iptables
+SCRIPT_NAME=/etc/init.d/iptables-rules
 IPTABLES_SCRIPT=/etc/iptables-medium.sh
 
 # Read configuration variable file if it is present
-[ -r /etc/default/$NAME ] && . /etc/default/$NAME
+[ -r ${IPTABLES_CONFIG_FILE} ] && . ${IPTABLES_CONFIG_FILE}
 
 # Load the VERBOSE setting and other rcS variables
 . /lib/init/vars.sh

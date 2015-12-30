@@ -35,10 +35,10 @@ chmod 600 /etc/init/iptables.conf
 On other systems (`System V` compatible systems):
 
 ```shell
-cp init-scripts/sysv/iptables /etc/init.d/
-chown root:root /etc/init.d/iptables
-chmod 700 /etc/init.d/iptables
-update-rc.d iptables defaults
+cp init-scripts/sysv/iptables-rules /etc/init.d/
+chown root:root /etc/init.d/iptables-rules
+chmod 700 /etc/init.d/iptables-rules
+update-rc.d iptables-rules defaults
 ```
 
 Bug reports
