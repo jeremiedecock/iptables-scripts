@@ -38,6 +38,7 @@ On other systems (`System V` compatible systems):
 cp init-scripts/sysv/iptables /etc/init.d/
 chown root:root /etc/init.d/iptables
 chmod 700 /etc/init.d/iptables
+update-rc.d iptables defaults
 ```
 
 Bug reports
