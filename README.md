@@ -22,9 +22,14 @@ account):
 cp iptables-scripts/iptables-*.sh /etc/
 chown root:root /etc/iptables-*.s
 chmod 700 /etc/iptables-*.s
-cp init-scripts/iptables.conf /etc/init/
+```
+
+On `upstart` compatible systems (former Debian, Ubuntu, ...):
+
+```shell
+cp init-scripts/upstart/iptables.conf /etc/init/
 chown root:root /etc/init/iptables.conf
-chmod 600 /etc/init/iptables.conf
+chmod 644 /etc/init/iptables.conf
 ```
 
 Bug reports
