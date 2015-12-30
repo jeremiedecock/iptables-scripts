@@ -21,6 +21,12 @@
 # THE SOFTWARE.
 #
 # For more information, see https://github.com/jeremiedecock/iptables-scripts
+#
+# To display the curent Netfilter rules, type the following commands in a Linux
+# console (from the administrator account):
+#
+#   iptables -L -n -v
+#   ip6tables -L -n -v
 
 IP4TABLES="/sbin/iptables -v"
 IP6TABLES="/sbin/ip6tables -v"
