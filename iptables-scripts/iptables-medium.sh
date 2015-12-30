@@ -28,11 +28,11 @@
 #   iptables -L -n -v
 #   ip6tables -L -n -v
 
-#IP4TABLES="/sbin/iptables -v"
-#IP6TABLES="/sbin/ip6tables -v"
-
 IP4TABLES="/sbin/iptables"
 IP6TABLES="/sbin/ip6tables"
+
+[ -x $IP4TABLES ] || { echo "Error: $IP4TABLES not found" ; exit 1 ; }
+[ -x $IP6TABLES ] || { echo "Error: $IP6TABLES not found" ; exit 1 ; }
 
 # Kernel params ###############################################################
 
