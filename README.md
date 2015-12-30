@@ -24,12 +24,20 @@ chown root:root /etc/iptables-*.s
 chmod 700 /etc/iptables-*.s
 ```
 
-On `upstart` compatible systems (former Debian, Ubuntu, ...):
+On `Upstart` compatible systems (former Debian, Ubuntu, ...):
 
 ```shell
 cp init-scripts/upstart/iptables.conf /etc/init/
 chown root:root /etc/init/iptables.conf
-chmod 644 /etc/init/iptables.conf
+chmod 600 /etc/init/iptables.conf
+```
+
+On other systems (`System V` compatible systems):
+
+```shell
+cp init-scripts/sysv/iptables /etc/init.d/
+chown root:root /etc/init.d/iptables
+chmod 700 /etc/init.d/iptables
 ```
 
 Bug reports
