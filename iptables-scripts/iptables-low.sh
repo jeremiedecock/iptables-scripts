@@ -117,4 +117,4 @@ done
 
 # DEFAUT ##############################
 
-#$IP4TABLES -A INPUT -m limit --limit 4/s -j LOG --log-prefix "IPTABLES : "
+#$IP4TABLES -A INPUT -m limit --limit 4/s -j LOG --log-prefix "NETFILTER (IN) : "
