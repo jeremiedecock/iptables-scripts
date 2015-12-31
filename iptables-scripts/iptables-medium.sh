@@ -79,7 +79,7 @@ $IP4TABLES -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 # Reject (and notify) incoming connexions on port 113/TCP ("authentication tap ident")
 $IP4TABLES -A INPUT -p tcp --destination-port auth -j REJECT --reject-with tcp-reset
 
-# ALLOWED_LOCAL_TCP_SERVICES ##########
+# ALLOWED_INCOMING_TCP_SERVICES #######
 
 # TRUSTED_IP contains the list of trusted IPs (IPs allowed to connect to this
 # computer). For instance:
