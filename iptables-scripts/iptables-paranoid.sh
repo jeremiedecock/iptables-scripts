@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# iptables-off.sh - block everything except on the loopback device.
+
 # Copyright (c) 2007,2015 Jérémie DECOCK <jd.jdhp@gmail.com> (www.jdhp.org)
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy

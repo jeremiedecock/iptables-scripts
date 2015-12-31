@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# iptables-low.sh - filter incoming packets only.
+
 # Copyright (c) 2007,2015 Jérémie DECOCK <jd.jdhp@gmail.com> (www.jdhp.org)
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy

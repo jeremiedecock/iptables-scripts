@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# iptables-off.sh - switch off the firewall (for IPv4 and IPv6).
+
 # Copyright (c) 2007,2015 Jérémie DECOCK <jd.jdhp@gmail.com> (www.jdhp.org)
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
