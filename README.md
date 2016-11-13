@@ -20,8 +20,8 @@ account):
 
 ```shell
 cp iptables-scripts/iptables-*.sh /etc/
-chown root:root /etc/iptables-*.s
-chmod 700 /etc/iptables-*.s
+chown root:root /etc/iptables-*.sh
+chmod 700 /etc/iptables-*.sh
 ```
 
 On `Upstart` compatible systems (former Debian, Ubuntu, ...):
