@@ -33,3 +33,8 @@ chmod 700 /etc/iptables-*.sh
 cp ${RELATIVE_DIR}/init-scripts/upstart/iptables.conf /etc/init/
 chown root:root /etc/init/iptables.conf
 chmod 600 /etc/init/iptables.conf
+
+# LAUNCH IPTABLES SCRIPTS (UPSTART) ###########################################
+
+service iptables-rules start
+

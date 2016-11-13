@@ -41,6 +41,12 @@ chmod 700 /etc/init.d/iptables-rules
 update-rc.d iptables-rules defaults
 ```
 
+Launch iptables scripts:
+
+```shell
+service iptables-rules start
+```
+
 Bug reports
 -----------
 

@@ -34,3 +34,8 @@ cp ${RELATIVE_DIR}/init-scripts/sysv/iptables-rules /etc/init.d/
 chown root:root /etc/init.d/iptables-rules
 chmod 700 /etc/init.d/iptables-rules
 update-rc.d iptables-rules defaults
+
+# LAUNCH IPTABLES SCRIPTS (SYSV) ##############################################
+
+service iptables-rules start
+
