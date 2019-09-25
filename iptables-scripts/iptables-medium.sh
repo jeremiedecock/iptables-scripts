@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# iptables-high.sh - filter incoming and outgoing packets.
+# iptables-medium.sh - filter incoming and outgoing packets.
 
 # Copyright (c) 2007,2015 Jérémie DECOCK <jd.jdhp@gmail.com> (www.jdhp.org)
 # 

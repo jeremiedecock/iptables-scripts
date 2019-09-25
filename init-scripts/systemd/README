@@ -1,0 +1,5 @@
+Inspired by UFW systemd unit (/lib/systemd/system/ufw.service).
+
+See also:
+- https://doc.ubuntu-fr.org/creer_un_service_avec_systemd#type_de_services_systemd
+- https://doc.fedora-fr.org/wiki/Systemd

@@ -1,6 +1,6 @@
 # [Iptables-scripts](https://github.com/jeremiedecock/iptables-scripts)
 
-Copyright (c) 2007,2015 Jeremie DECOCK (<http://www.jdhp.org>)
+Copyright (c) 2007,2015,2019 Jeremie DECOCK (<http://www.jdhp.org>)
 
 * Source code: <https://github.com/jeremiedecock/iptables-scripts>
 * Issue tracker: <https://github.com/jeremiedecock/iptables-scripts/issues>
@@ -13,6 +13,12 @@ firewall).
 ## Installation
 
 ### Using installation scripts 
+
+On `systemd` compatible systems (latest versions of Debian, Ubuntu, Arch, Fedora, ...), run the following command as root:
+
+```shell
+./install-systemd.sh
+```
 
 On `Upstart` compatible systems (former Debian, Ubuntu, ...), run the following command as root:
 
@@ -79,6 +85,29 @@ Assuming the firewall scripts have been installed with [install-sysv.sh](https:/
 For instance, to use the "medium" level at startup:
 
 `IPTABLES_SCRIPT=/etc/iptables-medium.sh`
+
+## Uninstall
+
+On `systemd` compatible systems (latest versions of Debian, Ubuntu, Arch, Fedora, ...), run the following command as root:
+
+```shell
+systemctl stop iptables-rules.service
+systemctl disable iptables-rules.service
+```
+
+On `Upstart` compatible systems (former Debian, Ubuntu, ...), run the following command as root:
+
+```shell
+service iptables stop
+rm /etc/init/iptables.conf
+```
+
+On other systems (`System V` compatible systems):
+
+```shell
+service iptables-rules stop
+update-rc.d -f iptables-rules remove
+```
 
 ## Bug reports
 
